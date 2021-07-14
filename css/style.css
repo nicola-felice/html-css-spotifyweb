@@ -4,6 +4,24 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: -0.5px;
+}
+
+
+/* ________ COMMON STYLES ________ */
+.flex {
+    display: flex;
+}
+.justify_space_between {
+    justify-content: space-between;
+}
+.align_items_center {
+    align-items: center;
+}
+/* ________ END COMMON STYLES ________ */
+
 
 
 
@@ -80,7 +98,7 @@ main {
 /* ________ FOOTER ________ */
 footer {
     height: 6rem;
-    background-color: brown;
+    background-color: #282828;
 
     display: flex;
     justify-content: space-between;
@@ -90,4 +108,36 @@ footer {
     position: relative;
     z-index: 9999;
 }
+
+/* ------- LEFT COLUMN FOOTER ------- */
+.artist_of_playing_song {
+    color: grey;
+}
+
+.artist_of_playing_song p {
+    color: white;
+    text-transform: capitalize;
+    font-weight: 500;
+    line-height: 1rem;
+}
+.artist_of_playing_song span {
+    color: gray;
+    font-weight: unset;
+    font-size: .85rem;
+}
+
+.artist_of_playing_song img {
+    max-width: 3rem;
+}
+
+
+/* spacing items */
+.artist_of_playing_song  :nth-child(1) {
+    margin-right: .75rem;
+}
+.artist_of_playing_song > :nth-child(1) {
+    margin-right: 2rem;
+}
+/* ------- END LEFT COLUMN FOOTER ------- */
+
 /* ________ END FOOTER ________ */
