@@ -15,9 +15,9 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <main>
-        <div class="left_navigation">
-            <div class="navigation">
+    <main class="flex">
+        <div class="left_navigation flex justify_space_between">
+            <div class="navigation flex">
                 <ul>
                     <li>lorem ipsum</li>
                     <li>lorem ipsum</li>
@@ -33,14 +33,17 @@
         </div>
 
         <div class="main_content">
-            <div class="subscribe_CTA">
+            <div class="subscribe_CTA flex align_items_center">
                 <button class="subscribe_CTA_btn">lorem ipsum</button>
             </div>
         </div>
     </main>
 
 
-    <footer>
+
+    <footer class="flex justify_space_between align_items_center">
+
+        <!-- left column footer -->
         <div class="artist_of_playing_song flex align_items_center">
             <div class="flex align_items_center">
                 <img src="./img/sinister.jpeg">
@@ -53,8 +56,26 @@
             </div>
         </div>
 
-        <div class="current_song_options">lorem sit amet</div>
+        <!-- middle column footer -->
+        <div class="current_song_options">
+            <div class="song_options">
+                <i class="fas fa-random"></i>
+                <i class="fas fa-step-backward"></i>
+                <i class="far fa-play-circle play_btn"></i>
+                <i class="fas fa-step-forward"></i>
+                <i class="fas fa-redo-alt"></i>
+            </div>
 
+            <div class="song_timeline">
+                0:25
+                <div class="before_dot"></div><!--
+
+             --><div class="after_dot"></div>
+                4:35
+            </div>
+        </div>
+
+        <!-- right column footer -->
         <div class="spotify_quick_settings">lorem sit amet</div>
     </footer>
 </body>
