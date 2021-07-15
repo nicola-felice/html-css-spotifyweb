@@ -103,8 +103,8 @@ main {
     color: white;
     border-left: 3px greenyellow solid;
     position: relative;
-    transform: translateX(-0.7rem);
-    padding-left: .7rem;
+    left: -0.7rem;
+    padding-left: calc(.7rem - 3px);
 }
 /* end nav options section */
 
