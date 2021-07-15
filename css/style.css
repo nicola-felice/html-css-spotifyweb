@@ -74,13 +74,9 @@ main {
     flex-shrink: 0;
 }
 
-h3,
-.logo,
-.user_info,
-.nav_options li,
-.add_playlist,
-.list_of_playlists {
-    padding: 0 .7rem;
+.left_navigation .padding_left_right {
+    padding-left: .7rem;
+    padding-right: .7rem;
 }
 
 .left_navigation li {
