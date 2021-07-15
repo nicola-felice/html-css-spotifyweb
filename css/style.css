@@ -70,13 +70,11 @@ main {
     color: #a3a3a3;
     font-size: .8rem;
 
-    flex-direction: column;
-    flex-shrink: 0;
-}
-
-.left_navigation .padding_left_right {
     padding-left: .7rem;
     padding-right: .7rem;
+
+    flex-direction: column;
+    flex-shrink: 0;
 }
 
 .left_navigation li {
@@ -103,7 +101,10 @@ main {
 
 .nav_options .active {
     color: white;
-    border-left: 2px greenyellow solid;
+    border-left: 3px greenyellow solid;
+    position: relative;
+    transform: translateX(-0.7rem);
+    padding-left: .7rem;
 }
 /* end nav options section */
 
