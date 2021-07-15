@@ -52,6 +52,15 @@ a {
 li {
     list-style: none;
 }
+
+img {
+    max-width: 100%;
+}
+
+h2 {
+    margin: 1.5rem 0 .5rem 0;
+    margin-left: 1rem;
+}
 /* ________ END COMMON STYLES ________ */
 
 
@@ -60,7 +69,6 @@ li {
 /* ________ MAIN ________ */
 main {
     height: calc(100vh - 6rem);
-    background-color: burlywood;
 }
 
 /* ----- LEFT NAVIGATION ----- */
@@ -175,8 +183,11 @@ main {
 .main_content {
     overflow-y: auto;
     padding-top: 5rem;
+    width: 100%;
+    background-color: #141922;
 }
 
+/* CTA banner */
 .subscribe_CTA {
     background-color: rgba(0, 0, 0, 0.637);
     position: fixed;
@@ -186,14 +197,59 @@ main {
 
     justify-content: flex-end;
 }
-
 .subscribe_CTA_btn {
     background-color: transparent;
     border: 1px white solid;
-    padding: .5rem 2rem;
+    padding: .65rem 2rem;
     margin-right: 2rem;
     border-radius: 2rem;
     color: white;
+}
+
+
+/* music filters */
+.music_filters {
+    width: 100%;
+}
+.music_filters a {
+    margin: 1rem .75rem;
+    text-transform: uppercase;
+    color: grey;
+    font-size: .8rem;
+    position: relative;
+}
+.music_filters a.active::after {
+    content: '';
+    display: block;
+    width: 1.75rem;
+    height: .1rem;
+    background-color: #adff2f;
+
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+/* albums section */
+.albums_section {
+    color: white;
+    max-width: 1500px;
+}
+.albums_section p {
+    color: grey;
+}
+.albums_section > p {
+    margin-left: 1rem;
+}
+.album {
+    text-align: center;
+    padding: 1rem;
+    width: calc(100% / 6);
+}
+.artisti img {
+    border-radius: 50%;
 }
 /* ----- END MAIN CONTENT ----- */
 
@@ -257,6 +313,7 @@ footer {
 /* song timeline */
 .song_timeline {
     font-size: .75rem;
+    font-weight: 400;
 }
 
 .song_timeline .before_dot {
