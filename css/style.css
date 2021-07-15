@@ -20,6 +20,24 @@ body {
 .align_items_center {
     align-items: center;
 }
+
+/* progression line */
+.before_dot,
+.after_dot {
+    display: inline-block;
+    height: 4px;
+    vertical-align: middle;
+}
+.before_dot {
+    border-radius: 1rem 0 0 1rem;
+    background-color: #c1c1c1;
+    margin-left: 1rem;
+}
+.after_dot {
+    border-radius: 0 1rem 1rem 0;
+    background-color: #5a5a5a;
+    margin-right: 1rem;
+}
 /* ________ END COMMON STYLES ________ */
 
 
@@ -146,7 +164,8 @@ footer {
 }
 .song_options :first-child,
 .song_options :last-child {
-    padding: 0 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 
@@ -154,25 +173,33 @@ footer {
 .song_timeline {
     font-size: .75rem;
 }
-.before_dot,
-.after_dot {
-    display: inline-block;
-    height: 4px;
-    vertical-align: middle;
 
-}
-.before_dot {
-    border-radius: 1rem 0 0 1rem;
-    background-color: #c1c1c1;
+.song_timeline .before_dot {
     width: 5vw;
-    margin-left: 1rem;
 }
-.after_dot {
-    border-radius: 0 1rem 1rem 0;
-    background-color: #5a5a5a;
+.song_timeline .after_dot {
     width: 25vw;
-    margin-right: 1rem;
 }
 /* ------- END MIDDLE COLUMN FOOTER ------- */
+
+
+/* ------- RIGHT COLUMN FOOTER ------- */
+.spotify_quick_settings {
+    color: white;
+    font-size: .75rem;
+}
+
+.spotify_quick_settings .before_dot {
+    width: 2rem;
+}
+.spotify_quick_settings .after_dot {
+    width: 6rem;
+}
+
+/* spacing items */
+.spotify_quick_settings *:not(.after_dot) {
+    margin-left: .75rem;
+}
+/* ------- END RIGHT COLUMN FOOTER ------- */
 
 /* ________ END FOOTER ________ */
