@@ -110,12 +110,9 @@ main {
 
 /* playlist section */
 .playlists {
-    max-height: calc((100vh - 6rem) * 0.7);
-}
-@media screen and (max-height: 220px) {
-    .navigation .playlists {
-        overflow-y: scroll;
-    }    
+    flex-grow: 1;
+    overflow-y: auto;
+    min-height: 0;
 }
 
 .playlists h3 {
@@ -141,10 +138,6 @@ main {
 
 
 /* user info section */
-.user_info {
-    max-height: calc((100vh - 6rem) * 0.3);
-}
-
 
 /* spacing items */
 .user_info * {
