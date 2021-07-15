@@ -49,7 +49,7 @@ a {
     color: unset;
 }
 
-ul {
+li {
     list-style: none;
 }
 /* ________ END COMMON STYLES ________ */
@@ -67,30 +67,30 @@ main {
 .left_navigation {
     width: 12rem;
     background-color: #000000;
-    flex-shrink: 0;
     color: #a3a3a3;
     font-size: .8rem;
 
     flex-direction: column;
+    flex-shrink: 0;
 }
 
+h3,
 .logo,
-.playlists,
 .user_info,
-.nav_options li {
+.nav_options li,
+.add_playlist,
+.list_of_playlists {
     padding: 0 .7rem;
 }
 
-.playlists li,
-.nav_options li {
-    padding-top: .4rem;
-    padding-bottom: .4rem;
+.left_navigation li {
+    text-transform: capitalize;
 }
 
 .logo {
     width: 8rem;
     margin-top: 1.25rem;
-    margin-bottom: .5rem;
+    margin-bottom: 1rem;
 }
 
 
@@ -98,6 +98,11 @@ main {
 .nav_options img {
     width: 1.25rem;
     vertical-align:bottom;
+}
+
+.nav_options li {
+    padding-top: .4rem;
+    padding-bottom: .4rem;
 }
 
 .nav_options .active {
@@ -109,22 +114,23 @@ main {
 
 
 /* playlist section */
-.playlists {
-    flex-grow: 1;
+.list_of_playlists {
     overflow-y: auto;
-    min-height: 0;
+    flex-grow: 1;
+}
+.list_of_playlists li {
+    margin: .85rem 0;
 }
 
-.playlists h3 {
+.left_navigation h3 {
     color: white;
     font-size: .8rem;
     margin-top: 1rem;
 }
 
-.playlists li {
-    text-transform: capitalize;
+.add_playlist {
+    margin-top: .75rem;
 }
-
 .add_playlist_plus_icon {
     font-size: 1.1rem;
     display: inline-flex;
