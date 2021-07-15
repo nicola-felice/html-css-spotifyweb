@@ -18,31 +18,60 @@
 <body>
     <main class="flex">
 
+        <!-- mobile only navigation -->
+        <div class="nav_mobile_version left_navigation align_items_center">
+
+            <img src="./img/logo-small.svg" class="logo_small" alt="">
+
+            <a href="#">
+                <img src="./img/home.svg" alt="">
+            </a>
+
+            <a href="#">
+                <img src="./img/search.svg" alt="">
+            </a>
+            
+            <a href="#">
+                <img src="./img/libreria.svg" alt="">
+            </a>
+
+            <a class="download_app">
+                <img class="download_icon" src="./img/download.svg">
+            </a>
+
+            <a class="user">
+                <img class="profile_image" src="./img/profile.svg">
+            </a>
+        </div>
+        <!-- end mobile only navigation -->
+
+
+
         <!-- LEFT NAVIGATION -->
-        <div class="left_navigation flex">
+        <div class="left_navigation flex navigation_desktop">
 
-            <img src="./img/logo.svg" class="logo">
+            <img src="./img/logo.svg" class="logo_big">
 
-            <!-- navigation section -->
+            <!-- nav options section -->
             <ul class="nav_options">
                 <li class="active">
                     <a href="#">
                         <img src="./img/home.svg" alt="">
-                        Home
+                        <span>Home</span>
                     </a>
                 </li>
 
                 <li>
                     <a href="#">
                         <img src="./img/search.svg" alt="">
-                        Cerca
+                        <span>Cerca</span>
                     </a>
                 </li>
 
                 <li>
                     <a href="#">
                         <img src="./img/libreria.svg" alt="">
-                        La tua libreria
+                        <span>La tua libreria</span>
                     </a>
                 </li>
             </ul>
@@ -71,14 +100,14 @@
             <div class="user_info">
                 <div class="download_app">
                     <img class="download_icon" src="./img/download.svg">
-                    installa_app
+                    <span>installa_app</span>
                 </div>
 
                 <hr>
 
                 <div class="user">
                     <img class="profile_image" src="./img/profile.svg">
-                    John Doe
+                    <span>John Doe</span>
                 </div>
             </div>
         </div>
@@ -229,6 +258,12 @@
 
             <div class="before_dot"></div><!--
             --><div class="after_dot"></div>
+
+
+        </div>
+        
+        <div class="show_other_settigs">
+            <i class="fas fa-ellipsis-v"></i>
         </div>
     </footer>
 </body>
