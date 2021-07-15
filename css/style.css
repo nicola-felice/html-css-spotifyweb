@@ -81,16 +81,16 @@ main {
     padding: 0 .7rem;
 }
 
-.logo {
-    width: 8rem;
-    margin-top: 1.25rem;
-    margin-bottom: .5rem;
-}
-
 .playlists li,
 .nav_options li {
     padding-top: .4rem;
     padding-bottom: .4rem;
+}
+
+.logo {
+    width: 8rem;
+    margin-top: 1.25rem;
+    margin-bottom: .5rem;
 }
 
 
@@ -129,11 +129,11 @@ main {
 }
 
 .add_playlist_plus_icon {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     display: inline-flex;
     vertical-align: middle;
-    height: 2rem;
-    width: 2rem;
+    height: 1.85rem;
+    width: 1.85rem;
     color: #000;
     background-color: #a3a3a3;
 }
