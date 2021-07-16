@@ -11,6 +11,31 @@ body {
 }
 
 
+/* ________ SCROLLBAR STYLES ________ */
+/* Works on Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(156, 156, 156, 0.815) transparent;
+  }
+  
+  /* Works on Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: rgba(156, 156, 156, 0.815);
+    border-radius: 20px;
+    border: 1px solid transparent;
+  }
+/* ________ END SCROLLBAR STYLES ________ */
+
+
+
 /* ________ COMMON STYLES ________ */
 .flex {
     display: flex;
