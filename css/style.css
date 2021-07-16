@@ -57,11 +57,36 @@ body {
     height: 4px;
     vertical-align: middle;
 }
+
 .before_dot {
     border-radius: 1rem 0 0 1rem;
     background-color: #c1c1c1;
     margin-left: 1rem;
+    position: relative;
 }
+
+.hover_progression_line {
+    display: inline-block;
+    cursor: pointer;
+}
+.hover_progression_line:hover .before_dot {
+    background-color: yellowgreen;
+} 
+.hover_progression_line:hover .before_dot::after {
+    background-color: white;
+    content: '';
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -5px;
+} 
+
+
 .after_dot {
     border-radius: 0 1rem 1rem 0;
     background-color: #5a5a5a;
@@ -81,6 +106,23 @@ li {
 img {
     max-width: 100%;
 }
+
+/* grow hover effects */
+.hover_grow {
+    transition: transform 200ms ease-in-out;
+}
+.hover_grow:hover {
+    transform: scale(1.1);
+}
+
+.hover_grow2 {
+    transition: transform 200ms ease-in-out;
+}
+.hover_grow2:hover {
+    transform: scale(1.25);
+}
+/* end grow hover effects */
+
 /* ________ END COMMON STYLES ________ */
 
 
@@ -150,6 +192,9 @@ main {
     padding-top: .4rem;
     padding-bottom: .4rem;
 }
+.nav_options li a:hover {
+    color: white;
+}
 
 .nav_options .active {
     color: white;
@@ -179,6 +224,14 @@ main {
 
 .add_playlist {
     margin-top: .75rem;
+    cursor: pointer;
+}
+.add_playlist:hover,
+.list_of_playlists li:hover {
+    color: white;
+}
+.add_playlist:hover .add_playlist_plus_icon {
+    background-color: white;
 }
 .add_playlist_plus_icon {
     font-size: 1.1rem;
@@ -206,6 +259,10 @@ main {
 .user_info .download_icon {
     width: 1.25rem;
 }
+.download_app:hover {
+    color: white;
+    cursor: pointer;
+}
 
 .user {
     color: white;
@@ -226,7 +283,7 @@ main {
 .main_content {
     overflow-y: auto;
     position: relative;
-    padding-top: 5rem;
+    padding-top: 5.5rem;
     width: 100%;
     background-color: #141922;
 }
@@ -249,6 +306,7 @@ main {
     margin-right: 2rem;
     border-radius: 2rem;
     color: white;
+    cursor: pointer;
 }
 @media screen and (max-width: 600px) {
     .subscribe_CTA {
@@ -275,6 +333,9 @@ main {
     color: grey;
     font-size: .8rem;
     position: relative;
+}
+.music_filters a:hover {
+    color: white;
 }
 .music_filters a.active::after {
     content: '';
@@ -410,6 +471,9 @@ footer {
 .artist_of_playing_song {
     color: grey;
 }
+.artist_of_playing_song i:hover {
+    color: white;
+}
 
 .artist_of_playing_song p {
     color: white;
@@ -500,6 +564,7 @@ footer {
 .song_options * {
     margin: 0 .5rem .75rem .5rem;
     vertical-align: middle;
+    cursor: pointer;
 }
 .song_options :first-child,
 .song_options :last-child {
