@@ -18,20 +18,20 @@ body {
     scrollbar-color: rgba(156, 156, 156, 0.815) transparent;
   }
   
-  /* Works on Chrome, Edge, and Safari */
-  *::-webkit-scrollbar {
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
     width: 7px;
-  }
-  
-  *::-webkit-scrollbar-track {
+}
+
+*::-webkit-scrollbar-track {
     background: transparent;
-  }
-  
-  *::-webkit-scrollbar-thumb {
+}
+
+*::-webkit-scrollbar-thumb {
     background-color: rgba(156, 156, 156, 0.815);
     border-radius: 20px;
     border: 1px solid transparent;
-  }
+}
 /* ________ END SCROLLBAR STYLES ________ */
 
 
@@ -50,7 +50,7 @@ body {
     align-items: center;
 }
 
-/* progression line */
+/* PROGRESSION LINE */
 .before_dot,
 .after_dot {
     display: inline-block;
@@ -86,13 +86,13 @@ body {
     right: -5px;
 } 
 
-
 .after_dot {
     border-radius: 0 1rem 1rem 0;
     background-color: #5a5a5a;
     margin-right: 1rem;
 }
-/* end progression line */
+/* END PROGRESSION LINE */
+
 
 a {
     text-decoration: none;
@@ -107,7 +107,8 @@ img {
     max-width: 100%;
 }
 
-/* grow hover effects */
+
+/* GROW HOVER EFFECTS */
 .hover_grow {
     transition: transform 200ms ease-in-out;
 }
@@ -121,7 +122,7 @@ img {
 .hover_grow2:hover {
     transform: scale(1.25);
 }
-/* end grow hover effects */
+/* END GROW HOVER EFFECTS */
 
 /* ________ END COMMON STYLES ________ */
 
@@ -158,6 +159,7 @@ main {
     margin-bottom: 1rem;
 }
 
+/* MOBILE LEFT NAVIGATION */
 .nav_mobile_version {
     display: none;
 }
@@ -181,8 +183,10 @@ main {
         padding-right: 3px;
     }
 }
+/* END MOBILE LEFT NAVIGATION */
 
-/* nav options section */
+
+/* NAV OPTIONS SECTION */
 .nav_options img {
     width: 1.25rem;
     vertical-align:bottom;
@@ -203,11 +207,11 @@ main {
     left: -0.7rem;
     padding-left: calc(.7rem - 3px);
 }
-/* end nav options section */
+/* END NAV OPTIONS SECTION */
 
 
 
-/* playlist section */
+/* PLAYLIST SECTION */
 .list_of_playlists {
     overflow-y: auto;
     flex-grow: 1;
@@ -242,10 +246,10 @@ main {
     color: #000;
     background-color: #a3a3a3;
 }
-/* end playlist section */
+/* END PLAYLIST SECTION */
 
 
-/* user info section */
+/* USER INFO SECTION */
 .user_info * {
     margin: .3rem 0;
 }
@@ -274,7 +278,7 @@ main {
     background-color: grey;
     border-radius: 50%;
 }
-/* end user info section */
+/* END USER INFO SECTION */
 
 /* ----- END LEFT NAVIGATION ----- */
 
@@ -288,7 +292,7 @@ main {
     background-color: #141922;
 }
 
-/* CTA banner */
+/* CTA BENNER */
 .subscribe_CTA {
     background-color: rgba(0, 0, 0, 0.637);
     position: fixed;
@@ -319,9 +323,10 @@ main {
         padding: .5rem 1rem;
     }
 }
+/* END CTA BENNER */
 
 
-/* music filters */
+/* MUSIC FILTERS */
 .music_filters {
     width: 100%;
     flex-wrap: wrap;
@@ -349,9 +354,10 @@ main {
     left: 50%;
     transform: translateX(-50%);
 }
+/* END MUSIC FILTERS */
 
 
-/* albums section */
+/* ALBUMS SECTION */
 .albums_section {
     color: white;
     max-width: 1500px;
@@ -448,7 +454,7 @@ h2 {
 .album_image:hover::before {
     background-color: rgba(0, 0, 0, 0.514);
 }
-/* end albums section */
+/* END ALBUMS SECTION */
 
 /* ----- END MAIN CONTENT ----- */
 
