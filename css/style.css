@@ -283,7 +283,6 @@ main {
     .albums_section h3 {
         font-size: .9rem;
     }    
-
     .albums_section p {
         font-size: .7rem;
     }
@@ -299,10 +298,15 @@ h2 {
     }    
 }
 
+.album img {
+    display: block;
+}
+
 .album {
     text-align: center;
     padding: 1rem;
     width: calc(100% / 6);
+    cursor: pointer;
 }
 @media screen and (max-width: 1100px) {
     .album {
@@ -319,10 +323,45 @@ h2 {
     }
 } 
 
-.artisti img {
+.artisti .album_image {
     border-radius: 50%;
+    overflow: hidden;
 }
 
+/* hover effect */
+.album_image {
+    position: relative;
+}
+.album_image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.album_image::after {
+    content: '\f144';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 2rem;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    opacity: 0;
+
+    transition: font-size 400ms cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.album_image:hover::after {
+    opacity: 1;
+    font-size: 3.5rem;
+}
+.album_image:hover::before {
+    background-color: rgba(0, 0, 0, 0.514);
+}
 /* end albums section */
 
 /* ----- END MAIN CONTENT ----- */
