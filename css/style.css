@@ -296,6 +296,7 @@ main {
 .subscribe_CTA {
     background-color: rgba(0, 0, 0, 0.637);
     position: fixed;
+    z-index: 3;
     top: 0;
     right: 0;
     left: 12rem;
