@@ -159,7 +159,7 @@ main {
     margin-bottom: 1rem;
 }
 
-/* MOBILE LEFT NAVIGATION */
+/* MOBILE ONLY LEFT NAVIGATION */
 .nav_mobile_version {
     display: none;
 }
@@ -183,7 +183,7 @@ main {
         padding-right: 3px;
     }
 }
-/* END MOBILE LEFT NAVIGATION */
+/* END MOBILE ONLY LEFT NAVIGATION */
 
 
 /* NAV OPTIONS SECTION */
@@ -283,6 +283,7 @@ main {
 /* ----- END LEFT NAVIGATION ----- */
 
 
+
 /* ----- MAIN CONTENT ----- */
 .main_content {
     overflow-y: auto;
@@ -292,7 +293,7 @@ main {
     background-color: #141922;
 }
 
-/* CTA BENNER */
+/* CTA BANNER */
 .subscribe_CTA {
     background-color: rgba(0, 0, 0, 0.637);
     position: fixed;
@@ -324,7 +325,7 @@ main {
         padding: .5rem 1rem;
     }
 }
-/* END CTA BENNER */
+/* END CTA BANNER */
 
 
 /* MUSIC FILTERS */
@@ -421,7 +422,7 @@ h2 {
     overflow: hidden;
 }
 
-/* hover effect */
+/* album hover effect */
 .album_image {
     position: relative;
 }
