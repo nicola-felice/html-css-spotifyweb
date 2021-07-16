@@ -94,7 +94,6 @@ main {
 .nav_mobile_version {
     display: none;
 }
-
 @media screen and (max-width: 600px) {
     .nav_mobile_version {
         display: flex;
@@ -169,12 +168,9 @@ main {
 
 
 /* user info section */
-
-/* spacing items */
 .user_info * {
     margin: .3rem 0;
 }
-
 
 .user_info .download_icon,
 .user_info .profile_image {
@@ -213,10 +209,10 @@ main {
 /* CTA banner */
 .subscribe_CTA {
     background-color: rgba(0, 0, 0, 0.637);
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
-    left: 0;
+    left: 12rem;
     height: 5rem;
 
     justify-content: flex-end;
@@ -229,7 +225,11 @@ main {
     border-radius: 2rem;
     color: white;
 }
-
+@media screen and (max-width: 600px) {
+    .subscribe_CTA {
+        left: 3rem;
+    }
+}
 @media screen and (max-width: 450px) {
     .subscribe_CTA_btn {
         font-size: .8rem;
